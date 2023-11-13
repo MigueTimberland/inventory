@@ -18,7 +18,7 @@
 
 Para crear un repositorio en GitHub, podemos ir a la sección de repositorios de nuestro perfil y hacer el click en el botón de "New". 
 
-![Boton New](https://github.com/MigueTimberland/Docs/nuevo.png)
+![Boton New](https://github.com/MigueTimberland/inventory/blob/master/Docs/nuevo.png)
 
 Se abrirá la página "Nuevo repositorio". Aquí deberás proporcionar la información básica para tu nuevo repositorio:
 
@@ -30,11 +30,11 @@ Se abrirá la página "Nuevo repositorio". Aquí deberás proporcionar la inform
 
 Inicializar este repositorio con: Puedes optar por inicializar tu repositorio con un archivo "README", un archivo "gitignore" y/o una licencia. Estos son opcionales y puedes añadirlos más tarde si lo prefieres.
 
-![Creando nuevo repositorio](https://github.com/MigueTimberland/Docs/new_repository.png)
+![Creando nuevo repositorio](https://github.com/MigueTimberland/inventory/blob/master/Docs/new_repository.png)
 
 Al crear el nuevo repositorio tendremos creado el primer archivo README.md
 
-![Nuevo repositorio](https://github.com/MigueTimberland/Docs/nuevo.png)
+![Nuevo repositorio](https://github.com/MigueTimberland/inventory/blob/master/Docs/repository.png)
 
 
 # Clonar Repositorio 

@@ -5,15 +5,15 @@
 
 Para esta parte del documento definiremos las siguientes Historias de Usuarios:
 
-- [HU1 - Como usuario quiero ingresar nuevos activos fijo.](https://github.com/gabrielacampoverde/CC_Gabriela/issues/1)
+- [HU1 - Como usuario quiero ingresar nuevos activos fijo.](https://github.com/MigueTimberland/inventory/issues/1)
 
 - [HU2 - Como usuario quiero transferir activos fijos de un lugar a otro.](https://github.com/gabrielacampoverde/CC_Gabriela/issues/2)
 
-- [HU3 - Como usuario quiero tener reportes de activos fijos por diferentes parametros de busqueda.](https://github.com/gabrielacampoverde/CC_Gabriela/issues/3)
+- [HU3 - Como usuario quiero tener reportes de activos fijos por diferentes parametros de busqueda.](https://github.com/MigueTimberland/inventory/issues/3)
 
-- [HU4 - Como desarrollador quiero automatizar las opciones de ingreso](https://github.com/gabrielacampoverde/CC_Gabriela/issues/4)
+- [HU4 - Como desarrollador quiero automatizar las opciones de ingreso](https://github.com/MigueTimberland/inventory/issues/4)
 
-- [HU5 - Como usuario de contabilidad quiero generar depreciación mensual de los activos fijos.](https://github.com/gabrielacampoverde/CC_Gabriela/issues/5)
+- [HU5 - Como usuario de contabilidad quiero generar depreciación mensual de los activos fijos.](https://github.com/MigueTimberland/inventory/issues/5)
   
 
 ## Estrutura del proyecto
@@ -100,17 +100,17 @@ Para el desarrollo del proyecto lo dividiremos en tres partes el frondend, backe
 
 Para para esta parte del documento vamos a describir cada uno de los hitos el proyecto:
 
-- [Hito 1: Definir el proyecto](https://github.com/gabrielacampoverde/CC_Gabriela/milestone/1)
+- [Hito 1: Definir el proyecto](https://github.com/MigueTimberland/inventory/milestone/1)
 
-- [Hito 2: Migrar la data de los activos fijos a PostgreSQL](https://github.com/gabrielacampoverde/CC_Gabriela/milestone/2)
+- [Hito 2: Migrar la data de los activos fijos a PostgreSQL](https://github.com/MigueTimberland/inventory/milestone/2)
 
-- [Hito 3: Creación de las opciones para el usuario](https://github.com/gabrielacampoverde/CC_Gabriela/milestone/3)
+- [Hito 3: Creación de las opciones para el usuario](https://github.com/MigueTimberland/inventory/milestone/3)
 
-- [Hito 4: Creación reportes necesarios](https://github.com/gabrielacampoverde/CC_Gabriela/milestone/4)
+- [Hito 4: Creación reportes necesarios](https://github.com/gabrielacampoverde/MigueTimberland/inventory/4)
 
-- [Hito 5: Creación de Doker para pruebas](https://github.com/gabrielacampoverde/CC_Gabriela/milestone/5)
+- [Hito 5: Creación de Doker para pruebas](https://github.com/gabrielacampoverde/MigueTimberland/inventory/5)
 
-- [Hito 6: Cargar las opciones desarrolladas a un servidor](https://github.com/gabrielacampoverde/CC_Gabriela/milestone/6)
+- [Hito 6: Cargar las opciones desarrolladas a un servidor](https://github.com/MigueTimberland/inventory/milestone/6)
  
   
   
