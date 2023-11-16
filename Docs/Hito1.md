@@ -5,16 +5,16 @@
 
 Para esta parte del documento definiremos las siguientes Historias de Usuarios:
 
-- [HU1 - Como usuario quiero ingresar nuevos activos fijo.](https://github.com/MigueTimberland/inventory/issues/1)
+- [HU1 - Como usuario quiero ingresar las categorias.](https://github.com/MigueTimberland/inventory/issues/1)
 
-- [HU2 - Como usuario quiero transferir activos fijos de un lugar a otro.](https://github.com/gabrielacampoverde/CC_Gabriela/issues/2)
+- [HU2 - Como usuario quiero ingresar los productos.](https://github.com/MigueTimberland/inventory/issues/2)
 
-- [HU3 - Como usuario quiero tener reportes de activos fijos por diferentes parametros de busqueda.](https://github.com/MigueTimberland/inventory/issues/3)
+- [HU3 - Como usuario quiero ingresar los proveedores.](https://github.com/MigueTimberland/inventory/issues/3)
 
-- [HU4 - Como desarrollador quiero automatizar las opciones de ingreso](https://github.com/MigueTimberland/inventory/issues/4)
+- [HU4 - Como usuario quiero gestionar el stock.](https://github.com/MigueTimberland/inventory/issues/4)
 
-- [HU5 - Como usuario de contabilidad quiero generar depreciación mensual de los activos fijos.](https://github.com/MigueTimberland/inventory/issues/5)
-  
+- [HU5 - Como usuario quiero tener reportes del stock de productos.](https://github.com/MigueTimberland/inventory/issues/5)
+ 
 
 ## Estrutura del proyecto
 
@@ -22,80 +22,51 @@ Para el desarrollo del proyecto lo dividiremos en tres partes el frondend, backe
 
  - Frontend: 
    
-   Para el frontend se usara el lenguaje de JavaScript, porque permite la creación de interfaces de usuario interactivas y dinámicas. Esto es esencial para un ERP, ya que los usuarios deben interactuar con datos en tiempo real, realizar actualizaciones y recibir retroalimentación instantánea.
-   
-   Con JavaScript se puede crear una experiencia de usuario más fluida y agradable. Se puede implementar funciones como la carga asincrónica de datos, validaciones en el lado del cliente y efectos visuales para mejorar la usabilidad para el cliente. Con JavaScript se puede personalizar la interfaz de usuario del ERP de acuerdo a las necesidades específicas que requiere la universidad. 
-   
+   Para el frontend se usara el lenguaje de Vue.js, porque permite la creación de interfaces de usuario interactivas y dinámicas. Esto es esencial para las opciones, ya que los usuarios deben interactuar con datos en tiempo real, realizar actualizaciones y recibir retroalimentación instantánea.
+      
   
  - Backend:
  
-   Para el desarrollo del backend usaremos el lenguaje de programción PHP, ya que es conocido por ser un lenguaje relativamente fácil de aprender, lo que puede acelerar el desarrollo y permitir que los desarrolladores nuevos se integren rápidamente en el proyecto. Tambien nos permite un desarrollo ágil y rápido, lo que es beneficioso para crear y adaptar un sistema ERP a las necesidades cambiantes de una empresa.
- 
-   PHP se integra bien con una variedad de sistemas de gestión de bases de datos, como MySQL, PostgreSQL y SQLite, lo que es esencial para un sistema ERP que debe gestionar grandes volúmenes de datos, en este caso se trabajara en PostgreSQL.
- 
-   PHP se ejecuta en diferentes sistemas operativos, lo que facilita la implementación en varios entornos, incluyendo servidores Windows, Linux y macOS. Para este caso se iniciara el desarrollo en un sistema de Linux.
- 
-   Usaremos PHP porque es de código abierto y gratuito, lo que puede reducir los costos de desarrollo y licenciamiento en comparación con otras tecnologías. Adicional cuenta con una arquitectura adecuada y tiene buenas prácticas de desarrollo, PHP puede ser escalable y capaz de manejar grandes volúmenes de datos y usuarios a medida que la empresa crece.
+   Para el desarrollo del backend usaremos Laravel como marco de desarrollo para iniciar el proyecto se procedera a instalar php y Laravel en Windows siguientes pasos:
    
-   Para iniciar el proyecto se procedera a instalar PHP en el sistema opertivo de Linux, con los siguientes pasos:
+   1.- Abrimos un terminal y nos debemos de asegurarte de que los paquetes están actualizados, así que ejecuta este comando en windows en la Terminal. 
    
-   1.- Abrimos un terminal y nos debemos de asegurarte de que los paquetes están actualizados, así que ejecuta este comando de Linux en la Terminal. 
+   ![Laragon](https://github.com/MigueTimberland/inventory/blob/master/Docs/laragon.png)
+
+   (https://github.com/MigueTimberland/inventory/blob/master/Docs/laragon_ejecutable.png)
    
-   ![Inst_PHP_1](img/Inst_PHP_1.png)
+   2.- Ahora estás listo para instalar laravel. 
    
-   2.- Ahora estás listo para instalar PHP. El comando para hacerlo es fácil y sencillo.
-   
-   ![Inst_PHP_2](img/Inst_PHP_2.png)
+   ![Laravel](https://github.com/MigueTimberland/inventory/blob/master/Docs/laravel.png)
   
-   3.- Esto instalará la última versión de PHP junto con varias extensiones. Puedes usar este código para ver qué versión tienes.
+   3.- Esto instalará la versión de PHP junto con varias extensiones. Puedes usar este código para ver qué versión tienes.
    
-   ![Inst_PHP_3](img/Inst_PHP_3.png)
+   ![PHP](https://github.com/MigueTimberland/inventory/blob/master/Docs/php.png)
    
  - Base de Datos:
  
-  Para administrar la base de datos usaremos PostgreSQL ya que es compatible con múltiples sistemas operativos, incluyendo Windows, Linux, macOS y otros sistemas UNIX. Esto facilita su implementación en una variedad de entornos informáticos; para nuestro caso trabajaremos en Linux. PostgreSQL es altamente escalable, lo que es crucial para un sistema ERP que necesita manejar grandes volúmenes de datos y usuarios a medida que la empresa crece. Puede escalar vertical u horizontalmente según sea necesario.
+  Para administrar la base de datos usaremos MySQL ya que es compatible con múltiples sistemas operativos, incluyendo Windows. Esto facilita su implementación en una variedad de entornos informáticos.
  
- Seguiremos los siguientes pasos para la instalación de PostgreSQL:
+ Seguiremos los siguientes pasos para la instalación de MySQL:
  
-  1.- Actualice el índice del paquete local de su servidor:
+  1.- Se instalara Laragon:
+  Que es un entorno de desarrollo Web que mediante un único instalador nos instala PHP, Apache, MySQL y Node. js
  
-  ![Inst_PostgreSQL_1](img/Inst_PostgreSQL_1.png)
+  ![laragon](https://github.com/MigueTimberland/inventory/blob/master/Docs/laravel.png)
  
-  2.- Se puede descargar e instalar el paquete PostgreSQL con un solo comando
+  2.- Se tendra una interfaz de MySQL para ejecutar los querys.
  
-  ![Inst_PostgreSQL_2](img/Inst_PostgreSQL_2.png)
+  ![Admin](https://github.com/MigueTimberland/inventory/blob/master/Docs/AdminMySql.png)
   
-  3.- Una vez instalado el sistema de gestión de bases de datos, inicia PostgreSQL:
+  3.- Una vez instalado las herramientas se podra clonar el repositorio creando una llave en de desarrollador:
   
-  ![Inst_PostgreSQL_3](img/Inst_PostgreSQL_3.png)
-  
-  4.- Consulta el estado de PostgreSQL para comprobar si realmente se está ejecutando:
-  
-  ![Inst_PostgreSQL_4](img/Inst_PostgreSQL_4.png)
-  
-  El servicio debería aparecer como “activo”. Utiliza la tecla [Q] para salir de la pantalla de estado.
+  ![Key](https://github.com/MigueTimberland/inventory/blob/master/Docs/llave.png)
 
-  5.- Después de la instalación, PostgreSQL dispone de una cuenta por defecto llamada “postgres”. Puedes activarla con el siguiente comando:
+  4.- Se clonara el proyecto:
   
-  ![Inst_PostgreSQL_5](img/Inst_PostgreSQL_5.png)
+  ![Key](https://github.com/MigueTimberland/inventory/blob/master/Docs/clone.png)
   
-  6.- Ubuntu se comporta como si hubieras iniciado sesión con la cuenta de PostgreSQL, es a partir de entonces cuando puedes acceder al prompt del SGBD.
-  
-  ![Inst_PostgreSQL_6](img/Inst_PostgreSQL_6.png)
-  
-  7.- Una vez estés trabajando en el entorno de PostgreSQL, utiliza el siguiente comando para mostrar qué conexión está activa actualmente:
-  
-  ![Inst_PostgreSQL_7](img/Inst_PostgreSQL_7.png)
-  
-  8.- Utiliza el siguiente comando para abandonar el entorno de PostgreSQL:
-  
-  ![Inst_PostgreSQL_8](img/Inst_PostgreSQL_8.png)
-  
-  9.- El sistema ha creado automáticamente una base de datos correspondiente al usuario “postgres”. Sin embargo, tu servidor PostgreSQL puede trabajar con varias bases de datos al mismo tiempo. Crea una nueva base de datos con el siguiente comando, en el cual puedes cambiar “example” por el nombre que quieras:
 
-  ![Inst_PostgreSQL_9](img/Inst_PostgreSQL_9.png)
-
-  
 ## Hitos del proyecto
 
 Para para esta parte del documento vamos a describir cada uno de los hitos el proyecto:
