@@ -14,11 +14,11 @@ Para realizar el test siguiremos los siguientes pasos:
 
   - **Primero:** Se instala el framework PHPUnit en Visual Code
 
-  ![PHPUnit](https://github.com/MigueTimberland/inventory/blob/master/Docs/phpunit.png)
+    ![PHPUnit](https://github.com/MigueTimberland/inventory/blob/master/Docs/phpunit.png)
 
   - **Segundo:** Buscamos el comando PHPUNnit Test 
 
-    ![PHPUnit Test](https://github.com/MigueTimberland/inventory/blob/master/Docs/phpunit.png)
+    ![PHPUnit Test](https://github.com/MigueTimberland/inventory/blob/master/Docs/phpunit_test.png)
      
   - **Tercero:** Escogemos que le haremos test: funcion o la clase:
   
