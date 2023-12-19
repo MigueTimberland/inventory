@@ -29,7 +29,7 @@ La documentacion del [Hito 1](https://github.com/MigueTimberland/inventory/blob/
 
 ## Hito 2: Test
 
-En el [Hito 2](https://github.com/MigueTimberland/inventory/blob/master/Docs/Hito2.md), se describira  la justificación del framework de trsts, librerias y bibliotecas que se usen en el proyecto, 
+En el [Hito 2](https://github.com/MigueTimberland/inventory/blob/master/Docs/Hito2.md), se describira  la justificación de librerias y bibliotecas que se usen en el proyecto, 
 
 Tambien se explicara la creación de los primeros test.
 
