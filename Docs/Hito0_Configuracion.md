@@ -43,11 +43,11 @@ Para Clonar un repositorio de GitHub en un sistema Linux, puedes utilizar la lí
 
 1.- Abre una terminal en Visual Code. Puedes buscar "Terminal" en el menú de View.
 
-![Terminal](Docs/principal.png)
+![Principal](https://github.com/MigueTimberland/inventory/blob/master/Docs/principal.png)
 
 2.- Luego, utiliza el comando git clone seguido de la URL del repositorio que deseas descargar. Puedes encontrar la URL en la página del repositorio en GitHub. 
 
-![Clonar](Docs/clone.png)
+![Clonar](https://github.com/MigueTimberland/inventory/blob/master/Docs/clone.png)
 
 3.- Git descargará el repositorio en tu sistema. Dependiendo del tamaño del repositorio y de tu conexión a Internet, este proceso puede llevar unos momentos.
 

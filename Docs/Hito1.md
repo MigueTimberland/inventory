@@ -24,7 +24,11 @@ Para el desarrollo del proyecto lo dividiremos en tres partes el frondend, backe
    
    Para el frontend se usara el lenguaje de Vue.js, porque permite la creación de interfaces de usuario interactivas y dinámicas. Esto es esencial para las opciones, ya que los usuarios deben interactuar con datos en tiempo real, realizar actualizaciones y recibir retroalimentación instantánea.
       
-  
+   ![Laragon](https://github.com/MigueTimberland/inventory/blob/master/Docs/vuejs.png)
+
+    ![Laragon](https://github.com/MigueTimberland/inventory/blob/master/Docs/vue.png)
+
+
  - Backend:
  
    Para el desarrollo del backend usaremos Laravel como marco de desarrollo para iniciar el proyecto se procedera a instalar php y Laravel en Windows siguientes pasos:
@@ -72,6 +76,7 @@ Para el desarrollo del proyecto lo dividiremos en tres partes el frondend, backe
 Para para esta parte del documento vamos a describir cada uno de los hitos el proyecto:
 
 - [Hito 1: Definir el proyecto](https://github.com/MigueTimberland/inventory/milestone/1)
+(https://github.com/MigueTimberland/inventory/issues/1)
 
 - [Hito 2: Migrar la data de los activos fijos a PostgreSQL](https://github.com/MigueTimberland/inventory/milestone/2)
 
