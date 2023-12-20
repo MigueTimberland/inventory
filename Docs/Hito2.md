@@ -24,38 +24,37 @@ Para realizar el test siguiremos los siguientes pasos:
   
      ![PHPUnit Test](https://github.com/MigueTimberland/inventory/blob/master/Docs/class.png)
 
-  - **Cuarto:** Al dar click en toda la clase en este caso escogimos la clase Product.php
+  - **Cuarto:** Al dar click en toda la clase en este caso escogimos la clase Payment.php
   
-     ![PHPUnit Test](https://github.com/MigueTimberland/inventory/blob/master/Docs/product.png)
-     
-  - **Quinto:** Podremos visualizar dentro del Bash que resultados nos arroja el test.
-
      ![PHPUnit Test](https://github.com/MigueTimberland/inventory/blob/master/Docs/product.png)
 
 ### Pruebas de Test
 
-   Realizamos pruebas de Test para las primeras opciones del modulo, y las respuestas fueron las siguientes, las cuales se estan subsanando:
+    Realizamos pruebas de Test para las primeras opciones del modulo, y las respuestas fueron las siguientes, las cuales se estan subsanando:
 
-   - Opción Afj1020.php
+    Jest nos permite generar un reporta referente a la cobertura del código (code coverage ratio) registrado durante el testing. Esto se consigue únicamente empleando el flag --coverage de Jest, mientra que en el caso de Mocha, esto es posible de obtener, pero nuevamente haciendo uso de una biblioteca adicional.
+
+    Por estas razones, y con el fin de no elevar considerablemente la complejidad del proyecto, se ha decidido optar por Jest como marco de pruebas. Este framework es instalado como dependencia de desarrollo mediante npm utilizando el comando:
      
-   ![Test4](img/Test4.png)
+   ![Jest](https://github.com/MigueTimberland/inventory/blob/master/Docs/jest.png)
    
-   - Opcion AFJ1030.php
+   - Se instalo composer
    
-   ![Test5](img/Test5.png)
+   ![Composer](https://github.com/MigueTimberland/inventory/blob/master/Docs/composer.png)
 
-   - Opcion AFJ1040.php
+   - Se creo un archivo de configuración para Jest, por ejemplo, jest.config.js en el directorio raíz del proyecto:
    
-   ![Test6](img/Test6.png)
-
-   - Opcion AFJ1050.php
+   ![Config](https://github.com/MigueTimberland/inventory/blob/master/Docs/config.png)
    
-   ![Test7](img/Test7.png)
+   ![ConfigJs](https://github.com/MigueTimberland/inventory/blob/master/Docs/configjs.png)
 
-   - Opcion AFJ1060.php
+   - Se creo el archivo CreateProducto.spec.js para la prueba del componente CreateProducto.vue
+
+   ![CreateProducto](https://github.com/MigueTimberland/inventory/blob/master/Docs/createproducto.png)
    
-   ![Test8](img/Test8.png)
+   - Finalmente se ejecuta el test
 
+    ![EjecucionTest](https://github.com/MigueTimberland/inventory/blob/master/Docs/testing.png)
 
 ## Librerias y Bibliotecas
 
@@ -82,18 +81,8 @@ Para el desarrollo del proyecto usaremos la siguiente Librerias:
  PHPMailer es una biblioteca de códigos para enviar correos electrónicos de forma segura y sencilla mediante código PHP desde un servidor web.
    
  Para tener la biblioteca PHPMailer descargada e incluida en el proyecto. Puede encontrar la biblioteca en [GitHub](https://github.com/PHPMailer/PHPMailer),
- 
- Para usarlo en nuestro proyecto se mostrar un pequeño ejemplo 
-   
-   ![Inst_PHP_1](img/PHPMailer.png)
 
- - Sweetalert
- 
-   SweetAlert es una biblioteca de JavaScript para crear ventanas modales (pop-ups) personalizadas y atractivas, en lugar de depender de las ventanas emergentes predeterminadas del navegador. Proporciona una interfaz de usuario más agradable y fácil de usar para mensajes de alerta, confirmación y entrada.
-   
-   Puedes incluir SweetAlert en tu proyecto descargando los archivos desde el [sitio web oficial](https://sweetalert.js.org/) o utilizando un administrador de paquetes como npm o yarn.
-   
-   
+
 ## Plantillas
 
  - Smarty
