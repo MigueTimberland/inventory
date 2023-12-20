@@ -53,8 +53,9 @@ Para realizar el test siguiremos los siguientes pasos:
    ![CreateProducto](https://github.com/MigueTimberland/inventory/blob/master/Docs/createproducto.png)
    
    - Finalmente se ejecuta el test
+ 
+   ![EjecucionTest](https://github.com/MigueTimberland/inventory/blob/master/Docs/testing.png)
 
-    ![EjecucionTest](https://github.com/MigueTimberland/inventory/blob/master/Docs/testing.png)
 
 ## Librerias y Bibliotecas
 
