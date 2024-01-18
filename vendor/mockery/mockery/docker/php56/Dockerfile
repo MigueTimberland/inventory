@@ -1,38 +1,43 @@
-#FROM php:5.6-cli
-#FROM your-registry/laragon:php-7.4.33-Win32-vc15-x64
+# Utiliza la imagen oficial de PHP como base
+FROM php:7.4.33
 
-#RUN apt-get update && \
-#    apt-get install -y git zip unzip && \
-#    apt-get -y autoremove && \
-#    apt-get clean && \
-#    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
-#    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# Establece el directorio de trabajo en la imagen
+WORKDIR /var/www/html
 
-#WORKDIR /opt/mockery
+# Instala git
+RUN apt-get update && apt-get install -y git
 
-#COPY composer.json ./
+# Instala PHPUnit
+RUN curl -LO https://phar.phpunit.de/phpunit.phar && \
+    chmod +x phpunit.phar && \
+    mv phpunit.phar /usr/local/bin/phpunit
 
-#RUN composer install
+# Instala las dependencias del sistema necesarias
+RUN apt-get update && apt-get install -y \
+    wget \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
+# Instala Composer globalmente
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
+    && php composer-setup.php --install-dir=/usr/local/bin --filename=composer --quiet \
+    && rm composer-setup.php
 
-# Usa Laragon con PHP 7.4.33 como contenedor base para Windows
-FROM your-registry/laragon:php-7.4.33-Win32-vc15-x64
+# Definir una variable de entorno para la versión de Git
+ARG GIT_VERSION=2.43.0-rc2.windows.1
 
-# Instala git, zip, unzip usando PowerShell (cmdlet)
-SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+# Actualiza e instala wget
+#RUN apt-get update && apt-get install -y wget
 
-RUN Install-PackageProvider -Name chocolatey -Force -RequiredVersion 2.8.5.130 -Force; \
-    Install-Package -Name git -Force -RequiredVersion 2.27.0 -Force; \
-    Install-Package -Name unzip -Force -RequiredVersion 6.0 -Force;
+RUN wget https://github.com/git-for-windows/git/archive/refs/tags/v${GIT_VERSION}/Git-${GIT_VERSION}.tar.gz && \
+    tar -xf Git-${GIT_VERSION}.tar.gz -C /usr/local --strip-components=1 && \
+    rm Git-${GIT_VERSION}.tar.gz
 
-# Instala Composer usando PowerShell
-RUN Invoke-WebRequest -Uri 'https://getcomposer.org/installer' -OutFile 'composer-setup.php'; \
-    php composer-setup.php --install-dir=/usr/local/bin --filename=composer; \
-    Remove-Item composer-setup.php;
-
-WORKDIR /opt/mockery
-
+# Copia solo el archivo composer.json desde la ruta local de Windows al contenedor
 COPY composer.json ./
 
 # Instala las dependencias usando Composer
 RUN composer install
+
+# Establece el punto de entrada para el contenedor
+CMD ["php", "your-script.php"]

@@ -33,5 +33,13 @@ En el [Hito 2](https://github.com/MigueTimberland/inventory/blob/master/Docs/Hit
 
 Tambien se explicara la creación de los primeros test.
 
+## Hito 3: Creación de un contenedor para pruebas
 
+En el [Hito 3](https://github.com/MigueTimberland/inventory/blob/master/Docs/Hito3.md). Se llevará a cabo la generación de un contenedor destinado a pruebas, empleando una herramienta de contenerización como Docker. Esta tecnología posibilita encapsular una aplicación junto con todas sus dependencias en un contenedor, simplificando así la creación de entornos de prueba coherentes y reproducibles.
+
+Elección de un contenedor base
+Configuración del contenedor
+Ejecución del contenedor
+Configuración Docker Hub
+Uso de registros alternativos y públicos de contenedores
 
