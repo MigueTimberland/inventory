@@ -12,20 +12,19 @@ Se procederá con la instalación de estas imágenes para poner en marcha los co
 
 Realizar la instalación de dichas imagenes
 
-   ![Hito3_1](https://github.com/MigueTimberland/inventory/blob/master/Docs/DockerFile.png)
+   ![Hito3_1](https://github.com/MigueTimberland/inventory/blob/master/Docs/dockerimagen.png)
 
-   ![Hito3_2](https://github.com/MigueTimberland/inventory/blob/master/Docs/dockerimagen.png)
-
-   ![Hito3_3](https://github.com/MigueTimberland/inventory/blob/master/Docs/imagenphp.png)
+   ![Hito3_2](https://github.com/MigueTimberland/inventory/blob/master/Docs/imagenphp.png)
 
  Aqui instalamos composer
 
-   ![Hito3_4](https://github.com/MigueTimberland/inventory/blob/master/Docs/run_composer.png)  
+   ![Hito3_3](https://github.com/MigueTimberland/inventory/blob/master/Docs/run_composer.png)  
 
 Aqui comprobaremos que las imagenes se encuentran dentro del contenedor
 
-   ![Hito3_5](https://github.com/MigueTimberland/inventory/blob/master/Docs/imagestotal.png)
+   ![Hito3_4](https://github.com/MigueTimberland/inventory/blob/master/Docs/imagestotal.png)
 
+   ![Hito3_5](https://github.com/MigueTimberland/inventory/blob/master/Docs/dockerescritorio.png)
 
 ## Configuración del contenedor
 
@@ -33,37 +32,57 @@ Aqui comprobaremos que las imagenes se encuentran dentro del contenedor
 
 Creamos el archivo Dockerfile para realizar la configuración de PHP
 
- - Construiremos nuestro contenedor base a partir de la imagen oficial de PHP 8.2.
+ - Construiremos nuestro contenedor base a partir de la imagen oficial de php:7.4.33.
  
-![Hito3_6](img/Hito3_6.png)
-
- - Definimos el usuario root debido a que necesitaremos permisos de administrador para instalar composer.
- 
-![Hito3_7](img/Hito3_7.png)
+ ![Hito3_6](https://github.com/MigueTimberland/inventory/blob/master/Docs/d1.png)
 
  - Establecemos el directorio dentro del contenedor en /var/www/html.
  
-![Hito3_8](img/Hito3_8.png)
+ ![Hito3_7](https://github.com/MigueTimberland/inventory/blob/master/Docs/d2.png)
 
- - Copiamos los archivos de configuración de apacher de la carpeta base en las carpetas del contenedor
+ - Instala PHPUnit
+
+ ![Hito3_8](https://github.com/MigueTimberland/inventory/blob/master/Docs/d3.png)
+
+ - Instalar Git.
  
-![Hito3_9](img/Hito3_9.png)
+ ![Hito3_9](https://github.com/MigueTimberland/inventory/blob/master/Docs/d4.png)
 
- - Construiremos contenedor a partir de la imagen postgres
+ - Instala las dependencias del sistema necesarias
+
+ ![Hito3_10](https://github.com/MigueTimberland/inventory/blob/master/Docs/d5.png)
+
+ - Instala Composer globalmente
  
-![Hito3_10](img/Hito3_10.png)
+ ![Hito3_11](https://github.com/MigueTimberland/inventory/blob/master/Docs/d6.png)
 
- - Definición de variables de entorno:
+ - Definir una variable de entorno para la versión de Git
  
-![Hito3_11](img/Hito3_11.png)
+ ![Hito3_12](https://github.com/MigueTimberland/inventory/blob/master/Docs/d7.png)
 
-Asi quedaria el archivo [Dockerfile](https://github.com/gabrielacampoverde/CC_Gabriela/blob/main/ERP-Inventario/Dockerfile)
+ - Actualiza e instala wget
+ 
+ ![Hito3_13](https://github.com/MigueTimberland/inventory/blob/master/Docs/d8.png)
 
-![Hito3_0](img/Hito3_0.png)
+  - Copia solo el archivo composer.json desde la ruta local de Windows al contenedor
+ 
+ ![Hito3_14](https://github.com/MigueTimberland/inventory/blob/master/Docs/d9.png)
+
+  - Instala las dependencias usando Composer
+ 
+ ![Hito3_15](https://github.com/MigueTimberland/inventory/blob/master/Docs/d10.png)
+
+  - Establece el punto de entrada para el contenedor
+ 
+ ![Hito3_16](https://github.com/MigueTimberland/inventory/blob/master/Docs/11.png)
+
+Asi quedaria el archivo [Dockerfile](https://github.com/MigueTimberland/inventory/blob/master/Docs/Dockerfile.txt)
+
+ ![Hito3_17](https://github.com/MigueTimberland/inventory/blob/master/Docs/dokerescritorio.png)
 
 ### Archivo docker-compose.yml
 
-Luego pasaremos a la configuración de [docker-compose.yml](https://github.com/gabrielacampoverde/CC_Gabriela/blob/main/ERP-Inventario/docker-compose.yml)
+Luego pasaremos a la configuración de [docker-compose.yml](https://github.com/MigueTimberland/inventory/blob/master/Docs/docker-compose.yml)
 
 - El servicio php-apache utiliza la imagen oficial de PHP con Apache y expone el puerto 80.
 

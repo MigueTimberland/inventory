@@ -27,6 +27,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 ARG GIT_VERSION=2.43.0-rc2.windows.1
 
 # Actualiza e instala wget
+#RUN apt-get update && apt-get install -y wget
 RUN wget https://github.com/git-for-windows/git/archive/refs/tags/v${GIT_VERSION}/Git-${GIT_VERSION}.tar.gz && \
     tar -xf Git-${GIT_VERSION}.tar.gz -C /usr/local --strip-components=1 && \
     rm Git-${GIT_VERSION}.tar.gz
